@@ -6,22 +6,20 @@
 */
 int main(void)
 {
-	char c = 'a';
+char minusculas = 'a';
+char mayusculas = 'A';
+char retorno = '\n';
+while (minusculas <= 'z')
+{
+putchar (minusculas);
+minusculas++;
+}
 
-	while (c <= 'z')
-	{
-		putchar(c);
-		c++;
-	}
-
-	c = 'A';
-
-	while (c <= 'Z')
-	{
-		putchar(c);
-		c++;
-	}
-
-	putchar('\n');
-	return (0);
+while (mayusculas <= 'Z')
+{
+putchar (mayusculas);
+mayusculas++;
+}
+putchar (retorno);
+return (0);
 }
