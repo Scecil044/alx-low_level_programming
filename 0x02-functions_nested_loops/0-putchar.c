@@ -1,17 +1,18 @@
 #include "main.h"
 /**
- * main - start of code
+ * main - main function
  *
- * Return: always zero
+ * Return: End program
 */
 int main(void)
 {
-char sync[] = "sync";
-int i;
-for (i = 0; sync[i] != '\0'; i++)
+char string[8] = "_putchar";
+int n = 0;
+while (n < 8)
 {
-_putchar(sync[i]);
+_putchar(string[n]);
+++n;
 }
-_putchar('\n');
+_putchar(10);
 return (0);
 }
