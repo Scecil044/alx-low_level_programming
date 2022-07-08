@@ -1,20 +1,23 @@
+#include "main.h"
+
 /**
- * _isupper - writes the character c to stdout
- * @c: The character to print
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * _isupper - a function that checks for uppercase character
+ * @c: an input character
+ * Return: 1 if c is uppercase or 0 otherwise
  */
 int _isupper(int c)
 {
-int i;
+	char uppercase = 'A';
+	int isupper = 0;
 
-if ((c >= 65 && c <= 90))
-{
-i = 1;
-}
-else
-{
-i = 0;
-}
-return (i);
+	for (; uppercase <= 'Z'; uppercase++)
+	{
+		if (c == uppercase)
+		{
+			isupper = 1;
+			break;
+		}
+	}
+
+	return (isupper);
 }
